@@ -1,3 +1,5 @@
+import { Footer } from "../components/Footer"
+import { Form } from "../components/Form"
 import { Layout } from "../components/Layout"
 import { data } from '../shared/data/what-we-do'
 import { IWhatWeDo } from '../shared/types/what-we-do'
@@ -43,6 +45,8 @@ export default function Home() {
           </ul>
         </section>
       </Layout>
+      <Form />
+      <Footer />
     </>
   )
 }
