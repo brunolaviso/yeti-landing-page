@@ -1,5 +1,6 @@
 import { Footer } from "../components/Footer"
 import { Form } from "../components/Form"
+import { Header } from "../components/Header"
 import { Layout } from "../components/Layout"
 import { data } from '../shared/data/what-we-do'
 import { IWhatWeDo } from '../shared/types/what-we-do'
@@ -9,17 +10,18 @@ import styles from './styles.module.scss'
 export default function Home() {
   return (
     <>
+      <Header />
       <section className={styles.Hero}>
         <img src="assets/bg-train.svg" alt="" />
       </section>
       <Layout>
-        <section className={styles.About}>
+        <section className={styles.About} id="about">
           <h2>A Yeti</h2>
           <div>
             <img src="assets/divider.svg" alt="Divisor" />
           </div>
           <p>
-            Somos a Yeti, uma Agência de Marketing 360º criada por 
+            Somos a Yeti, uma Agência de Marketing 360º criada por
             Growth Hackers. Somos especializados na produção de criativos
             que convertem! Criamos soluções disruptivas e personalizadas para
             nossos clientes e aceleramos o seu negócio!
@@ -29,7 +31,7 @@ export default function Home() {
             <img className={styles.HorizontalFlip} src="assets/divider.svg" alt="Divisor" />
           </div>
         </section>
-        <section className={styles.WhatWeDo}>
+        <section className={styles.WhatWeDo} id="what-we-do">
           <div className={styles.TitleWraper}>
             <img src="assets/tree.svg" alt="Icone de árvore" />
             <h2>O Que Fazemos</h2>
@@ -45,7 +47,9 @@ export default function Home() {
           </ul>
         </section>
       </Layout>
-      <Form />
+      <section id="contact">
+        <Form />
+      </section>
       <Footer />
     </>
   )
