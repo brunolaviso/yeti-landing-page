@@ -1,0 +1,46 @@
+.Footer {
+  width: 100%;
+  background-color: var(--black);
+  padding-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-size: 20px;
+  line-height: 1.4em;
+
+  section {
+    width: 1300px;
+    margin: 0 auto 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        height: 80px;
+      }
+    }
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 16px;
+
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}
